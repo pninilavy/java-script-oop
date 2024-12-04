@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="afterdelete"></div>
+    <label>
+        <input type="text" id="price" >הכנס מחיר
+    </label>
+    <br>
+    <button onclick="changePrice()">שינוי מחיר</button>
+    <br>
+
+    <label>
+        <input type="number" onblur="deleteByCalories()" id="calories" >הכנס קלוריות
+    </label>
+    <br>
+    
+    <select name="msg" id="" onchange="changeType(event)">
+        <option>warning</option>
+        <option>info</option>
+        <option>error</option>
+    </select>
+    <br>
+    <input type="text" id="t1">הכנס כותרת
+    <br>
+    <input type="text" id="t2">הכנס טקסט
+    <br>
+    <button onclick="display()">אישור</button>
+
+    <div id="msgDisplay" ></div>
+    <script src="oop.js"></script>
+</body>
+</html>
